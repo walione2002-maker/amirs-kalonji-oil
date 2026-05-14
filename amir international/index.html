@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amir's Kalonji Oil - futuristic premium black seed oil brand with 30ml, 60ml and 120ml filtered, debris-free oil bottles." />
+  <meta name="theme-color" content="#050704" />
+  <title>Amir's Kalonji Oil | Pure Filtered Black Seed Oil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="topbar" id="topbar">
+    <a href="#home" class="brand" aria-label="Amir's Kalonji Oil homepage">
+      <span class="brand-mark">AK</span>
+      <span class="brand-text">
+        <strong>Amir's Kalonji Oil</strong>
+        <small>Pure • Filtered • Debris-Free</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#purity">Purity</a>
+      <a href="#lab">Lab</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#order">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Next-generation black seed oil brand</p>
+          <h1>Pure kalonji oil, filtered for a cleaner future.</h1>
+          <p class="lead">Amir's Kalonji Oil is designed as a premium, modern oil brand focused on clarity, clean filtering, careful bottling, and a debris-free visual standard.</p>
+
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Bottles</a>
+            <a href="#purity" class="btn btn-ghost">View Purity System</a>
+          </div>
+
+          <div class="metric-strip">
+            <article><strong>30ml</strong><span>Trial</span></article>
+            <article><strong>60ml</strong><span>Daily</span></article>
+            <article><strong>120ml</strong><span>Value</span></article>
+            <article><strong>0%</strong><span>Visible debris target</span></article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="holo-card card-a">
+            <span>Filtered</span>
+            <strong>Clear visual finish</strong>
+          </div>
+          <div class="holo-card card-b">
+            <span>Pack sizes</span>
+            <strong>30 • 60 • 120 ml</strong>
+          </div>
+
+          <div class="bottle-hologram">
+            <div class="bottle-cap"></div>
+            <div class="bottle-neck"></div>
+            <div class="bottle-body">
+              <div class="bottle-reflection"></div>
+              <div class="bottle-label">
+                <small>AMIR'S</small>
+                <h2>Kalonji Oil</h2>
+                <p>Pure filtered black seed oil</p>
+              </div>
+              <div class="oil-wave"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quick-trust">
+      <div class="container trust-grid reveal">
+        <article><span>01</span><strong>Seed selection</strong><p>Prepared with quality-focused raw material handling.</p></article>
+        <article><span>02</span><strong>Fine filtration</strong><p>Built around a cleaner oil appearance.</p></article>
+        <article><span>03</span><strong>Visual check</strong><p>Every bottle concept highlights clarity and debris-free presentation.</p></article>
+        <article><span>04</span><strong>Secure pack</strong><p>Premium bottle, label and sealed product experience.</p></article>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Product matrix</p>
+          <h2>Three focused bottles. One pure identity.</h2>
+          <p>Simple sizes make selling easier: a trial bottle, a best-selling daily bottle, and a value bottle for repeat customers.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-size="30ml" data-name="Trial Bottle" data-price="Request price">
+            <div class="product-visual pv-small"><span>30ml</span></div>
+            <div class="product-body">
+              <p class="tag">Trial Size</p>
+              <h3>30ml Kalonji Oil</h3>
+              <p>Compact, premium and ideal for first-time buyers or sampling campaigns.</p>
+              <ul><li>Fine-filtered</li><li>Travel-friendly</li><li>Clean bottle check</li></ul>
+              <button class="btn btn-primary add-cart" data-product="30ml Kalonji Oil">Add to Order</button>
+            </div>
+          </article>
+
+          <article class="product-card featured reveal delay-1" data-size="60ml" data-name="Daily Bottle" data-price="Request price">
+            <div class="product-visual pv-medium"><span>60ml</span></div>
+            <div class="product-body">
+              <p class="tag">Best Seller</p>
+              <h3>60ml Kalonji Oil</h3>
+              <p>The hero size for daily customers, shelf display and regular online orders.</p>
+              <ul><li>Debris-free focus</li><li>Premium label area</li><li>Balanced size</li></ul>
+              <button class="btn btn-gold add-cart" data-product="60ml Kalonji Oil">Add to Order</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2" data-size="120ml" data-name="Value Bottle" data-price="Request price">
+            <div class="product-visual pv-large"><span>120ml</span></div>
+            <div class="product-body">
+              <p class="tag">Value Size</p>
+              <h3>120ml Kalonji Oil</h3>
+              <p>For repeat buyers who want more quantity while keeping the bottle premium.</p>
+              <ul><li>Higher capacity</li><li>Family-friendly</li><li>Secure packing</li></ul>
+              <button class="btn btn-primary add-cart" data-product="120ml Kalonji Oil">Add to Order</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section purity" id="purity">
+      <div class="container purity-grid">
+        <div class="purity-copy reveal">
+          <p class="eyebrow">Purity protocol</p>
+          <h2>Built around a debris-free visual standard.</h2>
+          <p>This website avoids medical claims and focuses on the product qualities customers can understand: clean filtering, careful filling, bottle clarity and premium presentation.</p>
+
+          <div class="protocol-list">
+            <article><span>✓</span><div><strong>Fine filtration</strong><p>Designed to reduce visible residue and improve the final product look.</p></div></article>
+            <article><span>✓</span><div><strong>Clear bottle inspection</strong><p>Positioned around customer confidence before dispatch.</p></div></article>
+            <article><span>✓</span><div><strong>Focused product line</strong><p>Only kalonji oil bottles — no confusing unrelated products.</p></div></article>
+          </div>
+        </div>
+
+        <div class="scanner-panel reveal delay-1">
+          <div class="scan-line"></div>
+          <div class="sample-vial">
+            <div class="vial-oil"></div>
+          </div>
+          <div class="scanner-readout">
+            <small>Visual Purity Scan</small>
+            <strong>Particle-free presentation</strong>
+            <p>Brand promise for clean bottle appearance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab" id="lab">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Process lab</p>
+          <h2>A transparent process, explained beautifully.</h2>
+        </div>
+
+        <div class="process-track reveal">
+          <article><span>1</span><h3>Select</h3><p>Kalonji seeds are selected and visually checked.</p></article>
+          <article><span>2</span><h3>Extract</h3><p>Oil is prepared with controlled handling and consistency.</p></article>
+          <article><span>3</span><h3>Filter</h3><p>Fine filtering supports the debris-free presentation.</p></article>
+          <article><span>4</span><h3>Bottle</h3><p>Clean filling, sealing, labeling and final inspection.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Visual system</p>
+          <h2>Futuristic bottle and theme gallery.</h2>
+          <p>The Facebook share page was not accessible to extract original photos, so this version includes premium CSS-built product visuals. You can later replace these with real uploaded bottle images.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card reveal">
+            <div class="gallery-bottle gb-30"></div>
+            <figcaption><strong>30ml Trial Theme</strong><span>Compact launch bottle</span></figcaption>
+          </figure>
+          <figure class="gallery-card dark reveal delay-1">
+            <div class="gallery-bottle gb-60"></div>
+            <figcaption><strong>60ml Hero Theme</strong><span>Daily-use premium design</span></figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-2">
+            <div class="gallery-bottle gb-120"></div>
+            <figcaption><strong>120ml Value Theme</strong><span>Repeat buyer presentation</span></figcaption>
+          </figure>
+          <figure class="gallery-card wide reveal">
+            <div class="poster-copy">
+              <small>AMIR'S</small>
+              <h3>Filtered Kalonji Oil</h3>
+              <p>Dark seed black, olive green, liquid gold and warm cream — a future-ready identity for social selling.</p>
+            </div>
+            <figcaption><strong>Campaign Theme</strong><span>Ready for banners, reels, ads and product cards.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bundles" id="bundles">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Smart bundles</p>
+          <h2>Offers that are easy to understand.</h2>
+        </div>
+
+        <div class="bundle-grid">
+          <article class="bundle-card reveal"><span>Starter</span><h3>2 × 30ml</h3><p>For first-time buyers and trial campaigns.</p><button class="btn btn-ghost add-cart" data-product="Starter Pack: 2 x 30ml">Add Bundle</button></article>
+          <article class="bundle-card active reveal delay-1"><span>Popular</span><h3>2 × 60ml</h3><p>Best balanced offer for regular buyers.</p><button class="btn btn-gold add-cart" data-product="Popular Pack: 2 x 60ml">Add Bundle</button></article>
+          <article class="bundle-card reveal delay-2"><span>Value</span><h3>120ml + 30ml</h3><p>Great for repeat customers and gifting.</p><button class="btn btn-ghost add-cart" data-product="Value Pack: 120ml + 30ml">Add Bundle</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="container order-grid">
+        <div class="order-copy reveal">
+          <p class="eyebrow">Order portal</p>
+          <h2>Turn visitors into WhatsApp orders.</h2>
+          <p>Use the order builder to collect product interest. Replace the placeholder WhatsApp number in <code>script.js</code> with your real business number.</p>
+          <div class="order-summary" id="orderSummary">
+            <strong>Selected items</strong>
+            <ul id="cartList"><li>No items selected yet.</li></ul>
+          </div>
+        </div>
+
+        <form class="order-form reveal delay-1" id="orderForm">
+          <label>Full Name<input type="text" id="customerName" placeholder="Your name" required /></label>
+          <label>Phone Number<input type="tel" id="customerPhone" placeholder="03XX-XXXXXXX" required /></label>
+          <label>City<input type="text" id="customerCity" placeholder="Karachi / Lahore / Islamabad" /></label>
+          <label>Quantity<input type="number" id="customerQty" min="1" placeholder="Example: 2" /></label>
+          <label class="full">Delivery Address<textarea id="customerAddress" placeholder="Enter your complete delivery address"></textarea></label>
+          <label class="full">Message<textarea id="customerMessage" placeholder="Any special order note?"></textarea></label>
+          <button type="submit" class="btn btn-primary full">Send Order on WhatsApp</button>
+          <a href="https://www.facebook.com/share/18VFW98e5d/" target="_blank" rel="noopener" class="btn btn-ghost full">Open Facebook Page</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="footer-brand">Amir's Kalonji Oil</a>
+        <p>Futuristic premium filtered kalonji oil brand focused on clarity, clean bottling and debris-free presentation.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="#products">30ml Bottle</a>
+        <a href="#products">60ml Bottle</a>
+        <a href="#products">120ml Bottle</a>
+      </div>
+      <div>
+        <h4>Brand</h4>
+        <a href="#purity">Purity</a>
+        <a href="#lab">Process Lab</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://www.facebook.com/share/18VFW98e5d/" target="_blank" rel="noopener">Facebook</a>
+        <a href="#order">WhatsApp Order</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Amir's Kalonji Oil. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
